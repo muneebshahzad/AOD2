@@ -315,6 +315,11 @@ def tracking():
     global order_details
     return render_template("track.html", order_details=order_details)
 
+@app.route("/")
+def tracking2():
+    global order_details
+    return render_template("track.html", order_details=order_details)
+
 
 def get_daraz_orders(statuses):
     try:
